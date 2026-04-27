@@ -87,7 +87,7 @@ async function request(method: string, path: string, bodyOrOptions?: any, option
 
   const locale = getLocale()
   if (locale) {
-    headers['X-Lang'] = locale
+    headers['Accept-Language'] = locale
   }
 
   const token = localStorage.getItem('admin_token')
